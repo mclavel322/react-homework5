@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>React Practice</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      INSTRUCTIONS:
+
+      We have made you a functional component called Message,
+      and we are using ReactDOM to render the Message component
+      inside the root div.
+
+      But the Message function currently returns nothing,
+      so the screen is blank!
+
+      1)  Make the Message function return an h1 tag that says:
+          "Hello, World!"
+
+      and make sure you can see it on the screen.
+    -->
+    <script type="text/babel">
+      const Message = () => {
+        return <h1>Hello, World!</h1>
+      }
+
+      ReactDOM.render(<Message/>, document.getElementById('root'))
+    </script>
+  </body>
+</html>
